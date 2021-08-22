@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (request, response) => {
+app.all('/', (request, response) => {
   response.send('Hello World!')
 })
 
-module.exports = app
+export default {
+  path: '/',
+  handler: app
+}
