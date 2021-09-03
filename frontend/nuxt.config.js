@@ -43,18 +43,11 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://example.com',
-    browserBaseURL: 'http://localhost:3000'
+    baseURL: 'http://localhost:1337',
+    browserBaseURL: 'http://localhost:1337'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-
-  serverMiddleware: [
-    {
-      path: '/server-middleware',
-      handler: '@/server-middleware/rest.js'
-    }
-  ]
+  }
 }
